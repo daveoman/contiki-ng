@@ -3,6 +3,7 @@ all: $(CONTIKI_PROJECT)
 CONTIKI = ../../..
 
 PLATFORMS_EXCLUDE = native
+MAKE_MAC = MAKE_MAC_TSCH
 
 MODULES += os/services/demux/mac-demux
 ifeq ($(MAKE_WITH_ORCHESTRA), 1)

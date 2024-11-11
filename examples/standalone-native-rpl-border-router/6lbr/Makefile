@@ -4,6 +4,7 @@ CONTIKI = ../../..
 
 PLATFORMS_ONLY = native
 MAKE_MAC = MAKE_MAC_OTHER
+#MAKE_MAC = MAKE_MAC_TSCH
 
 MODULES += os/services/demux/net-demux
 MODULES += os/services/shell

@@ -40,4 +40,31 @@
 #define LLSEC802154_CONF_ENABLED 1
 #endif /* WITH_SECURITY */
 
+#define QUEUEBUF_CONF_NUM   4
+#if 0
+#define NBR_TABLE_CONF_MAX_NEIGHBORS    2
+#define NETSTACK_MAX_ROUTE_ENTRIES  0
+#endif
+#define UIP_CONF_BUFFER_SIZE    140
+#define SICSLOWPAN_CONF_FRAG    0
+
+#if 1
+/* Prefix all logs with file name and line-of-code */
+#define LOG_CONF_WITH_LOC   1
+
+#define LOG_CONF_LEVEL_RPL                         LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_TCPIP                        LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_IPV6                        LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_6LOWPAN                     LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_NULLNET                     LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_MAC                          LOG_LEVEL_NONE
+//#define LOG_CONF_LEVEL_FRAMER                      LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_6TOP                        LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_COAP                        LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_SNMP                        LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_LWM2M                       LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_MAIN                        LOG_LEVEL_NONE
+#define LOG_CONF_LEVEL_SYS                         LOG_LEVEL_NONE
+#endif
+
 #endif /* PROJECT_CONF_H */
